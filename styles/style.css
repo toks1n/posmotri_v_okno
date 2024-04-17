@@ -36,3 +36,21 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: end;
+  max-width: 1140px;
+  gap: 30px;
+  
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: start;
+  /* width: 30px; */
+}
