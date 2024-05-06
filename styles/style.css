@@ -37,20 +37,250 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+ }
+
+ button {
+  cursor: pointer;
+ }
+
+.page {
+  width: 1200px;
+}
+
 .content {
   display: grid;
-  justify-content: center;
+  justify-self: center;
   grid-template-columns: repeat(2, 1fr);
-  align-items: end;
-  max-width: 1140px;
+  width: 1140px;
   gap: 30px;
   
 }
 
+.result {
+  /* display: grid;
+  align-items: end; */
+  /* width: 711px;  */
+  height: 456px;
+  margin-bottom: 133px;
+  align-self: flex-end;
+}
+
+.result__video-container {
+  position: relative;
+  width: 711px;
+  height: 386px; 
+  margin-bottom: 16px;   
+}
+
+.result__video {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+
 .search-form {
+  /* display: grid; */
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content: space-between;
+  /* gap: 4 0px; */
+  align-items: start;
+  max-height: 54;
+  /* width: fit-content; */
+}
+
+.content__details {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  align-self: center;
+  grid-template-rows: 3fr 1fr;
+  gap: 26px;
+  align-items: flex-end;
+  /* width: 399px;
+  height: 534px; */
+  height: 100vh;
+  width: 100vh;
+}
+
+.content__list {
+  display: grid;
+  position: relative;
+  row-gap: 30px;
+  padding: 2px;
+  height: 298px;
+  /* row-gap: 30px; */
+  overflow-y: auto;
+  margin-bottom: 133px;
+  max-width: 399px;
+}
+
+.content__list li:last-child {
+  row-gap: 0;
+}
+
+.title {
+ /* margin-bottom: 26px; */
+}
+
+
+.content__list-item {
+  
+}
+
+ .content__video-card {
+  display: flex;
+  align-items: start;
+  cursor: pointer;
+ }
+
+ .content__video-card-description {
+  line-height: 16.2px;
+ }
+
+ .content__video-card-description-container {
+  max-width: 1000px;
+  width: 100%;
+ }
+
+ .content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+ }
+
+ .search-form__fieldset-title {
+  /* color: #fff; */
+  font-weight: 100;
+  font-size: 18px;
+  margin-left: 2px;
+  /* padding: 0 0 5px 0; */
+  font-family: 'Fira Sans Condensed';
+  /* padding: 0 0 0 2px; */
+ }
+
+ .search-form__fieldset {
+  width: 212px;
+  /* display: grid;
+  grid-template-columns: ; */
+ }
+
+ .title {
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 94%;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  /* letter-spacing: 2px; */
+ }
+
+ .content__accent {
+  color: #545050; 
+ }
+
+ .content__video-card-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 30px;
+ }
+
+ .content__card-link {
+  color: #fff;
+ }
+
+ .visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__label {
+  /* display: grid; */
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* width: 100px; */
+  /* background-color: #fff; */
+  display: flex;
+  width: fit-content;
+}
+
+.search-form__textfield {
+  width: 225px;
+  background-color: transparent;
+  border: 0;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  height: 27px;
+  color: #fff ;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Fira Sans Condensed';
+  appearance: none;
+}
+
+input::-webkit-input-placeholder {
+   color: #fff;
+   opacity: 0.7; 
+}
+
+.search-form__checkbox-list {
+  display: flex;
   justify-content: start;
-  /* width: 30px; */
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-left: 1px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  background-color: #fff;
+
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  height: 19px;
+  width: 19px;
+  /* background-color: #fff; */
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  margin-left: 5px;
+}
+
+.button {
+  font-family: 'Fira Sans Condensed';
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  height: 34px;
+}
+
+.search-form__submit-button{
+  width: 194px;
+  align-self: flex-end;
+ 
+  
+}
+
+.more-button{
+  width: 399px;
+  /* align-self: flex-end; */
 }
